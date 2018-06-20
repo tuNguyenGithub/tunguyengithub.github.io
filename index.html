@@ -6,32 +6,7 @@
   </head>
   <body>
   <p>Hello World</p>
+  <iframe src="https://nguyenanhtu.myharavan.com/" height="200" width="300"></iframe>
   </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-  $.ajax({
-    url: 'https://api.seapi.net/serp/google-realtime/',
-    headers: {
-      "X-Api-Key": "cIRidp2wghiIGu5BfvNSyaudyI5KbJDuhvikuyti"
-    },
-    type: "POST",
-    data: {
-      "keyword": "nodejs2+tutorial",
-      "user_agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
-      "browser_language": "en-US",
-      "google_base_url": "https://www.google.com",
-      "site": "www.google.com",
-      "restriction_language_code": "",
-      "lang": "",
-      "country": "US",
-      "uule_canonical_name": "New York"
-    },
-    success: function(data) {
-      console.log('data: ', data)
-    },
-    error: function(err) {
-      console.log('err: ', err)
-    }
-  })
-</script>
