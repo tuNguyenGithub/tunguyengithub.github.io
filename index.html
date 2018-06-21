@@ -10,20 +10,3 @@
   </body>
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$.ajax({
-  url: 'https://nguyenduyphong.bizwebvietnam.net/admin/store.json',
-  type: 'GET',
-  dataType: 'json',
-  headers: {
-    'X-Bizweb-Access-Token':'646d7f748d3c4120a1cd7d2c96dc8659',
-    'Content-Type': 'application/json'
-  },
-  success: function(data) {
-    console.log('data: ', data)
-  },
-  error: function(e) {
-    console.log('err: ', e)
-  }
-})
-</script>
