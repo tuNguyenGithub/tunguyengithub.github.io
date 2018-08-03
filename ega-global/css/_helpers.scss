@@ -44,3 +44,9 @@
 	padding-left: 0;
 	list-style: none;
 }
+
+// Align
+.#{$prefix}text--left { text-align: left; }
+.#{$prefix}text--center { text-align: center; }
+.#{$prefix}text--right { text-align: right; }
+.#{$prefix}text--justify { text-align: justify; }
