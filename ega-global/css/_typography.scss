@@ -12,3 +12,8 @@ h3, .#{$prefix}h3 { font-size: $h3-font-size; }
 h4, .#{$prefix}h4 { font-size: $h4-font-size; }
 h5, .#{$prefix}h5 { font-size: $h5-font-size; }
 h6, .#{$prefix}h6 { font-size: $h6-font-size; }
+
+.#{$prefix}text--lowercase { text-transform: lowercase; }
+.#{$prefix}text--uppercase { text-transform: uppercase; }
+.#{$prefix}text--capitalize { text-transform: capitalize; }
+.#{$prefix}text--bold { font-weight: bold!important; }

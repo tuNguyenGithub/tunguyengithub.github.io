@@ -195,6 +195,18 @@ img, iframe {
   padding-left: 0;
   list-style: none; }
 
+.ega-text--left {
+  text-align: left; }
+
+.ega-text--center {
+  text-align: center; }
+
+.ega-text--right {
+  text-align: right; }
+
+.ega-text--justify {
+  text-align: justify; }
+
 /* ==========  TYPOGRAPHY  ========== */
 /* ==========  COLORS  ========== */
 /* ==========  GRID  ========== */
