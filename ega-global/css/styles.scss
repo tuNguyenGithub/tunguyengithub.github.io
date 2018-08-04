@@ -3,13 +3,13 @@
 $demo-border-color: #a6be3d;
 $demo-background-color: rgba(166, 190, 62, .4);
 
-.#{$prefix}demo__grids {
-	margin-top: 30px;
-}
-.#{$prefix}demo__grids .#{$prefix}row:not(:first-child) {
-	margin-top: 5px;
-}
 .#{$prefix}demo {
+	&__grids {
+		margin-top: 30px;
+		.#{$prefix}row:not(:first-child) {
+			margin-top: 5px;
+		}
+	}
 	&__grids .#{$prefix}col, &__grids  [class*=#{$prefix}col-] {
 		border: 1px solid $demo-border-color;
 		background-color: $demo-background-color;
