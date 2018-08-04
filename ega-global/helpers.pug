@@ -1,0 +1,20 @@
+include header.pug
+body
+  h2 Basic Pages
+  pre
+    code.html
+      | &lt;div class="ega-container"&gt;
+      |   ...
+      | &lt;/div&gt;
+      | &lt;div class="ega-container--fluid"&gt;
+      |   ...
+      | &lt;/div&gt;
+
+  div(style='padding-top: 30px; padding-bottom: 30px;')
+    div(style='background-color: #a6be3d; padding-top: 30px; padding-bottom: 30px').ega-container.ega-text--center
+      h3 .ega-container
+    div(style='margin-top: 30px')
+    div(style='background-color: #1d3d6b; padding-top: 30px; padding-bottom: 30px; color: #fff').ega-container--fluid.ega-text--center
+      h3 .ega-container--fluid
+
+include footer.pug

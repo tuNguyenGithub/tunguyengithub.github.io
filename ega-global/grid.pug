@@ -1,0 +1,76 @@
+include header.pug
+body
+  div.ega-container
+    h2 Grid system
+    div.ega-text--center.ega-demo__grids
+      - var n1 = 0;
+      div.ega-row
+        while n1 < 12
+          div.ega-col span 1
+          - n1++
+
+      - var n2 = 0;
+      div.ega-row
+        while n2 < 6
+          div.ega-col span 2
+          - n2++
+
+      - var n3 = 0;
+      div.ega-row
+        while n3 < 4
+          div.ega-col span 3
+          - n3++
+      
+      - var n4 = 0;
+      div.ega-row
+        while n4 < 3
+          div.ega-col span 4
+          - n4++
+
+      div.ega-row
+        div.ega-col-4 span 4
+        div.ega-col-8 span 8
+
+      - var n5 = 0;
+      div.ega-row
+        while n5 < 2
+          div.ega-col span 6
+          - n5++
+
+      div.ega-row
+        div.ega-col span 12
+
+    h2 Grid Classes
+    p The Bootstrap grid system has four classes:
+    ul
+      li
+        code.ega-text-color--red xs 
+        | (for phones - screens less than 768px wide)
+      li 
+        code.ega-text-color--red sm 
+        | (for tablets - screens equal to or greater than 768px wide)
+      li 
+        code.ega-text-color--red md 
+        | (for small laptops - screens equal to or greater than 992px wide)
+      li 
+        code.ega-text-color--red lg 
+        | (for laptops and desktops - screens equal to or greater than 1200px wide)
+    p The classes above can be combined to create more dynamic and flexible layouts.
+
+    h2 Basic Structure of a Grid
+    pre
+      code.html
+        | &lt;div class="ega-row"&gt;
+        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+        | &lt;/div&gt;
+        | &lt;div class="ega-row"&gt;
+        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+        | &lt;/div&gt;
+        | &lt;div class="ega-row"&gt;
+        |   ...
+        | &lt;/div&gt;
+
+include footer.pug
