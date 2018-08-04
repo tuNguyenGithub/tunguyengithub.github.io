@@ -1,5 +1,5 @@
 * {
-  &::before, &::after {
+  &, &::before, &::after {
     box-sizing: border-box;
   }
 }
@@ -39,4 +39,7 @@ hr {
 }
 img, iframe {
   max-width: 100%;
+}
+pre {
+  margin: 0;
 }

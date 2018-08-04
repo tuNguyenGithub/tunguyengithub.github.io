@@ -1,0 +1,22 @@
+{
+  "name": "github_io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuNguyenGithub/tuNguyenGithub.github.io.git"
+  },
+  "author": "TuNguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuNguyenGithub/tuNguyenGithub.github.io/issues"
+  },
+  "homepage": "https://github.com/tuNguyenGithub/tuNguyenGithub.github.io#readme",
+  "dependencies": {
+    "pug": "^2.0.3"
+  }
+}

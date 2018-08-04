@@ -1,0 +1,13 @@
+.ega-demo__grids {
+  margin-top: 30px; }
+
+.ega-demo__grids .ega-row:not(:first-child) {
+  margin-top: 5px; }
+
+.ega-demo__grids .ega-col, .ega-demo__grids [class*=ega-col-] {
+  border: 1px solid #a6be3d;
+  background-color: rgba(166, 190, 62, 0.4);
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/*# sourceMappingURL=styles.css.map */
