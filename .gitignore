@@ -1,2 +1,3 @@
 node_modules
 ega-global/dist/css/*.scss
+ega-global/dist/css/*.css.map
