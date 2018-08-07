@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.15.0/lodash.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Input</h3><i>Dữ liệu mẫu</i>
+        <textarea id="input" type="text" rows="20" cols="100">
+            [
+              {
+                "type": "header",
+                "content": "Slide 1"
+              },
+              {
+                "type": "checkbox",
+                "id": "use_slide_1",
+                "label": "Hiển thị?"
+              },
+              {
+                "type": "image",
+                "max-width": "1350",
+                "max-height": "740",
+                "id": "slideshow_1.jpg",
+                "label": "Hình ảnh",
+                "info": ".jpg 1350x740 px"
+              },
+              {
+                "type": "text",
+                "id": "slide_link_1",
+                "label": "Trang liên kết khi click vào banner"
+              }
+            ]
+        </textarea>
+        <div id="structure" style="display: none">
+        </div>
+        <input id="multi" type="text" placeholder="Nhân x?">
+        <button id="action">Click</button>
+        <h3>Output</h3>
+        <div id="result" style="display: none">
+        </div>
+        <h4 id="mess" class="alert alert-success text-center" style="display: none;"></h4>
+        <textarea id="output" readonly="true"></textarea>
+    </div>
+    <style type="text/css">
+        #input{
+            color: #ccc;
+        }
+        #output {
+            border: 1px solid green;
+            padding: 5px;
+            margin: 20px auto;
+            width: 800px;
+            height: 350px;
+            overflow: auto;
+        }
+    </style>
+    <script type="text/javascript">
+        $('#input').click(function() {
+            debugger;
+            $(this).empty();
+        })
+        $('button#action').click(function() {
+            var input = $('#input').val();
+            var obj = JSON.parse(input);
+            var result = "";
+            debugger;
+            //var idArr = [];
+            var number = $('#multi').val();
+
+            for(k=1; k<=number; k++){
+                for(i=0; i<obj.length; i++){
+                    if(!(obj[i].id == undefined)){
+                        debugger;
+                        var currID = obj[i].id;
+                        newId = currID.replace(/(\d+)+/g, function(match, number) {
+                            return parseInt(number)+1;
+                        });
+
+                        obj[i].id = newId;
+                    }
+
+                    if(!(obj[i].content == undefined)){
+                        var currContent = obj[i].content;
+                        newContent = currContent.replace(/(\d+)+/g, function(match, number) {
+                            return parseInt(number)+1;
+                        });
+
+                        obj[i].content = newContent;
+                    }
+                }
+                var myJSON = JSON.stringify(obj);
+                var result1 = myJSON.substring(1, myJSON.length-1);
+
+                if(k<number){
+                    result1 += ',';
+                }
+
+                result += result1;
+            }
+
+            var output = '[' + result + ']';
+            
+            $('#output').text(output);
+
+            $('#output').select();
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'Thành công! Đã thêm kết quả vào Clipboard' : 'unsuccessful';
+            $('#mess').text(msg).show();
+        });
+    </script>
+</body>
+
+</html>
