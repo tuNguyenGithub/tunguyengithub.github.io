@@ -5,38 +5,35 @@ body
     div.ega-demo__color
       div.ega-row
         div.ega-col-3
-          span.ega-text-color--green Green
+          span.ega-text-color--primary Primary
         div.ega-col-9
           div.ega-demo__color-item
             pre
               code.html
-                | &lt;span class="ega-text-color--green"&gt; 
-                |   Green
+                | &lt;span class="ega-text-color--primary"&gt; 
+                |   Primary
                 | &lt;/span&gt;
     h2 Background Color
     div.ega-demo__color
       div.ega-row
         div.ega-col-3
-          div.ega-background-color--blue.ega-text-color--white(style='padding: 10px;')
-            span Blue
+          div.ega-background-color--success.ega-text-color--white(style='padding: 10px;')
+            span Success
         div.ega-col-9
           div.ega-demo__color-item
             pre
               code.html
-                | &lt;div class="ega-background-color--blue"&gt; 
-                |   Blue
+                | &lt;div class="ega-background-color--success ega-text-color--white"&gt; 
+                |   Success
                 | &lt;/div&gt;
     h2 Pallet Color
-    - var palettColor = { 'Red': '#f44336', 'Orange': '#ff9800', 'Yellow': '#ffeb3b', 'Green': '#4caf50', 'Blue': '#2196f3', 'Indigo': '#3f51b5', 'Purple': '#9c27b0', 'Grey': '#9e9e9e', 'White': '#ffffff', 'Black': '#000000', 'Transparent': ''}
+    - var palettColor = [{ 'backgroundClass': 'primary', 'textClass': 'white', 'code': '#007bff' }, { 'backgroundClass': 'secondary', 'textClass': 'white', 'code': '#6c757d' }, { 'backgroundClass': 'success', 'textClass': 'white', 'code': '#28a745' }, { 'backgroundClass': 'danger', 'textClass': 'white', 'code': '#dc3545' }, { 'backgroundClass': 'warning', 'textClass': 'white', 'code': '#ffc107' }, { 'backgroundClass': 'info', 'textClass': 'white', 'code': '#17a2b8' }, { 'backgroundClass': 'light', 'textClass': 'dark', 'code': '#f8f9fa' }, { 'backgroundClass': 'dark', 'textClass': 'white', 'code': '#343a40' }, { 'backgroundClass': 'white', 'textClass': 'dark', 'code': '#ffffff' }, { 'backgroundClass': 'black', 'textClass': 'white', 'code': '#000000' }, { 'backgroundClass': 'transparent', 'textClass': 'black', 'code': 'transparent'}]
+
     div.ega-demo__color
-    div.ega-row
-      each code, name in palettColor
-        div.ega-col-4
-          case code
-            when ''
-            when '#ffffff'
-              div.ega-text--center(style='color: #000; padding: 10px; background-color:' +code) #{code} #{name}
-            default
-              div.ega-text--center(style='color: #fff; padding: 10px; background-color:' +code) #{code} #{name}
+      div.ega-row
+        each item, index in palettColor
+          div.ega-col-4
+            div(style='padding: 10px' class="ega-text--center ega-background-color--"+item.backgroundClass+" ega-text-color--"+item.textClass)
+              | #{item.code} - #{item.backgroundClass}
     
 include footer.pug

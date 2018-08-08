@@ -239,53 +239,53 @@ h6, .ega-h6 {
   font-weight: bold !important; }
 
 /* ==========  COLORS  ========== */
-.ega-text-color--red {
-  color: #f44336 !important; }
+.ega-text-color--primary {
+  color: #007bff !important; }
 
-.ega-background-color--red {
-  background-color: #f44336 !important; }
+.ega-background-color--primary {
+  background-color: #007bff !important; }
 
-.ega-text-color--orange {
-  color: #ff9800 !important; }
+.ega-text-color--secondary {
+  color: #6c757d !important; }
 
-.ega-background-color--orange {
-  background-color: #ff9800 !important; }
+.ega-background-color--secondary {
+  background-color: #6c757d !important; }
 
-.ega-text-color--yellow {
-  color: #ffeb3b !important; }
+.ega-text-color--success {
+  color: #28a745 !important; }
 
-.ega-background-color--yellow {
-  background-color: #ffeb3b !important; }
+.ega-background-color--success {
+  background-color: #28a745 !important; }
 
-.ega-text-color--green {
-  color: #4caf50 !important; }
+.ega-text-color--danger {
+  color: #dc3545 !important; }
 
-.ega-background-color--green {
-  background-color: #4caf50 !important; }
+.ega-background-color--danger {
+  background-color: #dc3545 !important; }
 
-.ega-text-color--blue {
-  color: #2196f3 !important; }
+.ega-text-color--warning {
+  color: #ffc107 !important; }
 
-.ega-background-color--blue {
-  background-color: #2196f3 !important; }
+.ega-background-color--warning {
+  background-color: #ffc107 !important; }
 
-.ega-text-color--indigo {
-  color: #3f51b5 !important; }
+.ega-text-color--info {
+  color: #17a2b8 !important; }
 
-.ega-background-color--indigo {
-  background-color: #3f51b5 !important; }
+.ega-background-color--info {
+  background-color: #17a2b8 !important; }
 
-.ega-text-color--purple {
-  color: #9c27b0 !important; }
+.ega-text-color--light {
+  color: #f8f9fa !important; }
 
-.ega-background-color--purple {
-  background-color: #9c27b0 !important; }
+.ega-background-color--light {
+  background-color: #f8f9fa !important; }
 
-.ega-text-color--grey {
-  color: #eeeeee !important; }
+.ega-text-color--dark {
+  color: #343a40 !important; }
 
-.ega-background-color--grey {
-  background-color: #eeeeee !important; }
+.ega-background-color--dark {
+  background-color: #343a40 !important; }
 
 .ega-text-color--white {
   color: #ffffff !important; }
