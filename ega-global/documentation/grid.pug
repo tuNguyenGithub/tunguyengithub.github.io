@@ -1,134 +1,132 @@
-include header.pug
-body
-  div.ega-container
-    h2 Grid system 12 columns
-    div.ega-text--center.ega-demo__grids
-      - var n1 = 0;
-      div.ega-row
-        while n1 < 12
-          div.ega-col col
-          - n1++
+extends ./layout/theme.pug
 
-      - var n2 = 0;
-      div.ega-row
-        while n2 < 6
-          div.ega-col col
-          - n2++
+block content
+  h2 Grid system 12 columns
+  div.ega-text--center.ega-demo__grids
+    - var n1 = 0;
+    div.ega-row
+      while n1 < 12
+        div.ega-col col
+        - n1++
 
-      - var n3 = 0;
-      div.ega-row
-        while n3 < 4
-          div.ega-col col
-          - n3++
-      
-      - var n4 = 0;
-      div.ega-row
-        while n4 < 3
-          div.ega-col col
-          - n4++
+    - var n2 = 0;
+    div.ega-row
+      while n2 < 6
+        div.ega-col col
+        - n2++
 
-      - var n5 = 0;
-      div.ega-row
-        while n5 < 2
-          div.ega-col col
-          - n5++
+    - var n3 = 0;
+    div.ega-row
+      while n3 < 4
+        div.ega-col col
+        - n3++
+    
+    - var n4 = 0;
+    div.ega-row
+      while n4 < 3
+        div.ega-col col
+        - n4++
 
-      div.ega-row
-        div.ega-col-1 col-1
-        div.ega-col-11 col-11
+    - var n5 = 0;
+    div.ega-row
+      while n5 < 2
+        div.ega-col col
+        - n5++
 
-      div.ega-row
-        div.ega-col-2 col-2
-        div.ega-col-10 col-10
-      
-      div.ega-row
-        div.ega-col-3 col-3
-        div.ega-col-9 col-9
-      
-      div.ega-row
-        div.ega-col-4 col-4
-        div.ega-col-8 col-8
+    div.ega-row
+      div.ega-col-1 col-1
+      div.ega-col-11 col-11
 
-      div.ega-row
-        div.ega-col-5 col-5
-        div.ega-col-7 col-7
-      
-      div.ega-row
-        div.ega-col col-12
+    div.ega-row
+      div.ega-col-2 col-2
+      div.ega-col-10 col-10
+    
+    div.ega-row
+      div.ega-col-3 col-3
+      div.ega-col-9 col-9
+    
+    div.ega-row
+      div.ega-col-4 col-4
+      div.ega-col-8 col-8
 
-    h2 Grid system 10 columns
-    div.ega-text--center.ega-demo__grids
-      - var n1 = 0;
-      div.ega-row
-        while n1 < 10
-          div.ega-col col
-          - n1++
+    div.ega-row
+      div.ega-col-5 col-5
+      div.ega-col-7 col-7
+    
+    div.ega-row
+      div.ega-col col-12
 
-      div.ega-row
-        div.ega-col-ten col-ten
-        div.ega-col-90 col-90
+  h2 Grid system 10 columns
+  div.ega-text--center.ega-demo__grids
+    - var n1 = 0;
+    div.ega-row
+      while n1 < 10
+        div.ega-col col
+        - n1++
 
-      div.ega-row
-        div.ega-col-20 col-20
-        div.ega-col-80 col-80
+    div.ega-row
+      div.ega-col-ten col-ten
+      div.ega-col-90 col-90
 
-      div.ega-row
-        div.ega-col-30 col-30
-        div.ega-col-70 col-70
+    div.ega-row
+      div.ega-col-20 col-20
+      div.ega-col-80 col-80
 
-      div.ega-row
-        div.ega-col-40 col-40
-        div.ega-col-60 col-60
+    div.ega-row
+      div.ega-col-30 col-30
+      div.ega-col-70 col-70
 
-    h2 Grid Classes
-    p The Bootstrap grid system has <span class='ega-text-color--red'>5</span> breakpoints:
-    ul
-      li
-        span Extra small 
-        | (<strong><576px</strong> wide).
-        br
-        | Class prefix: 
-        code.ega-text-color--red ega-col-
-      li 
-        span Small 
-        | (<strong>>=576px</strong> wide)
-        br
-        | Class prefix: 
-        code.ega-text-color--red ega-col-sm-
-      li 
-        span Medium 
-        | (<strong>>=768px</strong> wide)
-        br
-        | Class prefix: 
-        code.ega-text-color--red ega-col-md-
-      li 
-        span Large 
-        | (<strong>>=992px</strong> wide)
-        br
-        | Class prefix: 
-        code.ega-text-color--red ega-col-lg-
-      li 
-        span Extra large 
-        | (<strong>>=1200px</strong> wide)
-        br
-        | Class prefix: 
-        code.ega-text-color--red ega-col-xl-
-    p The classes above can be combined to create more dynamic and flexible layouts.
+    div.ega-row
+      div.ega-col-40 col-40
+      div.ega-col-60 col-60
 
-    h2 Basic Structure of a Grid
-    pre
-      code.html
-        | &lt;div class="ega-row"&gt;
-        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
-        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
-        | &lt;/div&gt;
-        | &lt;div class="ega-row"&gt;
-        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
-        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
-        |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
-        | &lt;/div&gt;
-        | &lt;div class="ega-row"&gt;
-        |   ...
-        | &lt;/div&gt;
+  h2 Grid Classes
+  p The Bootstrap grid system has <span class='ega-text-color--red'>5</span> breakpoints:
+  ul
+    li
+      span Extra small 
+      | (<strong><576px</strong> wide).
+      br
+      | Class prefix: 
+      code.ega-text-color--red ega-col-
+    li 
+      span Small 
+      | (<strong>>=576px</strong> wide)
+      br
+      | Class prefix: 
+      code.ega-text-color--red ega-col-sm-
+    li 
+      span Medium 
+      | (<strong>>=768px</strong> wide)
+      br
+      | Class prefix: 
+      code.ega-text-color--red ega-col-md-
+    li 
+      span Large 
+      | (<strong>>=992px</strong> wide)
+      br
+      | Class prefix: 
+      code.ega-text-color--red ega-col-lg-
+    li 
+      span Extra large 
+      | (<strong>>=1200px</strong> wide)
+      br
+      | Class prefix: 
+      code.ega-text-color--red ega-col-xl-
+  p The classes above can be combined to create more dynamic and flexible layouts.
 
-include footer.pug
+  h2 Basic Structure of a Grid
+  pre
+    code.html
+      | &lt;div class="ega-row"&gt;
+      |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+      |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+      | &lt;/div&gt;
+      | &lt;div class="ega-row"&gt;
+      |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+      |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+      |   &lt;div class="ega-col-*-*"&gt;&lt;/div&gt;
+      | &lt;/div&gt;
+      | &lt;div class="ega-row"&gt;
+      |   ...
+      | &lt;/div&gt;

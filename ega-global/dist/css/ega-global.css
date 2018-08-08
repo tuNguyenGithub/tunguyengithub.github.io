@@ -896,68 +896,68 @@ h6, .ega-h6 {
     display: block;
     width: 100%; }
 
-.ega-btn--red {
+.ega-btn--primary {
   color: #ffffff;
-  background-color: #f44336; }
+  background-color: #007bff; }
 
-.ega-btn--flat.ega-btn--red {
-  color: #f44336;
+.ega-btn--flat.ega-btn--primary {
+  color: #007bff;
   background-color: transparent; }
 
-.ega-btn--orange {
+.ega-btn--secondary {
   color: #ffffff;
-  background-color: #ff9800; }
+  background-color: #6c757d; }
 
-.ega-btn--flat.ega-btn--orange {
-  color: #ff9800;
+.ega-btn--flat.ega-btn--secondary {
+  color: #6c757d;
   background-color: transparent; }
 
-.ega-btn--yellow {
+.ega-btn--success {
   color: #ffffff;
-  background-color: #ffeb3b; }
+  background-color: #28a745; }
 
-.ega-btn--flat.ega-btn--yellow {
-  color: #ffeb3b;
+.ega-btn--flat.ega-btn--success {
+  color: #28a745;
   background-color: transparent; }
 
-.ega-btn--green {
+.ega-btn--danger {
   color: #ffffff;
-  background-color: #4caf50; }
+  background-color: #dc3545; }
 
-.ega-btn--flat.ega-btn--green {
-  color: #4caf50;
+.ega-btn--flat.ega-btn--danger {
+  color: #dc3545;
   background-color: transparent; }
 
-.ega-btn--blue {
+.ega-btn--warning {
   color: #ffffff;
-  background-color: #2196f3; }
+  background-color: #ffc107; }
 
-.ega-btn--flat.ega-btn--blue {
-  color: #2196f3;
+.ega-btn--flat.ega-btn--warning {
+  color: #ffc107;
   background-color: transparent; }
 
-.ega-btn--indigo {
+.ega-btn--info {
   color: #ffffff;
-  background-color: #3f51b5; }
+  background-color: #17a2b8; }
 
-.ega-btn--flat.ega-btn--indigo {
-  color: #3f51b5;
+.ega-btn--flat.ega-btn--info {
+  color: #17a2b8;
   background-color: transparent; }
 
-.ega-btn--purple {
-  color: #ffffff;
-  background-color: #9c27b0; }
-
-.ega-btn--flat.ega-btn--purple {
-  color: #9c27b0;
-  background-color: transparent; }
-
-.ega-btn--grey {
+.ega-btn--light {
   color: #333;
-  background-color: #eeeeee; }
+  background-color: #f8f9fa; }
 
-.ega-btn--flat.ega-btn--grey {
-  color: #eeeeee;
+.ega-btn--flat.ega-btn--light {
+  color: #f8f9fa;
+  background-color: transparent; }
+
+.ega-btn--dark {
+  color: #ffffff;
+  background-color: #343a40; }
+
+.ega-btn--flat.ega-btn--dark {
+  color: #343a40;
   background-color: transparent; }
 
 .ega-btn--white {
@@ -980,28 +980,28 @@ h6, .ega-h6 {
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2); }
 
-.ega-btn--red:hover {
+.ega-btn--primary:hover {
   background-color: #eeeeee; }
 
-.ega-btn--orange:hover {
+.ega-btn--secondary:hover {
   background-color: #eeeeee; }
 
-.ega-btn--yellow:hover {
+.ega-btn--success:hover {
   background-color: #eeeeee; }
 
-.ega-btn--green:hover {
+.ega-btn--danger:hover {
   background-color: #eeeeee; }
 
-.ega-btn--blue:hover {
+.ega-btn--warning:hover {
   background-color: #eeeeee; }
 
-.ega-btn--indigo:hover {
+.ega-btn--info:hover {
   background-color: #eeeeee; }
 
-.ega-btn--purple:hover {
+.ega-btn--light:hover {
   background-color: #eeeeee; }
 
-.ega-btn--grey:hover {
+.ega-btn--dark:hover {
   background-color: #eeeeee; }
 
 .ega-btn--white:hover {

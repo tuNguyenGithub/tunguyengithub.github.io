@@ -1,33 +1,31 @@
-include header.pug
-body
-  div.ega-container
-    h2 Clearfix
-    pre
-      code.html
-        | &lt;div class="ega-clearfix"&gt;
-        |   ...
-        | &lt;/div&gt;
+extends ./layout/theme.pug
 
-    h3 Example:
-    div.ega-clearfix.ega-background-color--blue
-      a.ega-btn.ega-btn--red.ega-nomargin(style='float: left;') Text float left
-      a.ega-btn.ega-btn--red.ega-nomargin(style='float: right;') Text float right
-    pre(style='margin-top: 30px;')
-      code.html
-        | &lt;div class="ega-clearfix ega-background-color--blue"&gt;
-        |   &lt;a class='ega-btn ega-btn--red ega-nomargin' style='float: left;'&gt;
-        |     Button float left
-        |   &lt;/a&gt;
-        |   &lt;a class='ega-btn ega-btn--red ega-nomargin' style='float: right;'&gt; 
-        |     Button float right
-        |   &lt;/a&gt;
-        | &lt;/div&gt;
+block content
+  h2 Clearfix
+  pre
+    code.html
+      | &lt;div class="ega-clearfix"&gt;
+      |   ...
+      | &lt;/div&gt;
 
-    h2 Hiding elements
-    pre
-      code.html
-        | &lt;div class="ega-hidden"&gt;
-        |   ...
-        | &lt;/div&gt;
+  h3 Example:
+  div.ega-clearfix.ega-background-color--blue
+    a.ega-btn.ega-btn--red.ega-nomargin(style='float: left;') Text float left
+    a.ega-btn.ega-btn--red.ega-nomargin(style='float: right;') Text float right
+  pre(style='margin-top: 30px;')
+    code.html
+      | &lt;div class="ega-clearfix ega-background-color--blue"&gt;
+      |   &lt;a class='ega-btn ega-btn--red ega-nomargin' style='float: left;'&gt;
+      |     Button float left
+      |   &lt;/a&gt;
+      |   &lt;a class='ega-btn ega-btn--red ega-nomargin' style='float: right;'&gt; 
+      |     Button float right
+      |   &lt;/a&gt;
+      | &lt;/div&gt;
 
-include footer.pug
+  h2 Hiding elements
+  pre
+    code.html
+      | &lt;div class="ega-hidden"&gt;
+      |   ...
+      | &lt;/div&gt;

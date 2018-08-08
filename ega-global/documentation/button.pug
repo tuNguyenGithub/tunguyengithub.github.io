@@ -1,26 +1,21 @@
-include header.pug
-body
-  div.ega-container
-    h2 Basic Pages
-    pre
-      code.html
-        | &lt;div class="ega-container"&gt;
-        |   ...
-        | &lt;/div&gt;
-        | &lt;div class="ega-container--fluid"&gt;
-        |   ...
-        | &lt;/div&gt;
+extends ./layout/theme.pug
 
-    h2 Default Button
-    a.ega-btn Button
-    - var palettColor1 = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'grey', 'white', 'black']
-    each color in palettColor1
-      a(class='ega-btn ega-btn--'+color) Button
+block content
+  h2 Basic Pages
+  pre
+    code.html
+      | &lt;div class="ega-container"&gt;
+      |   ...
+      | &lt;/div&gt;
+      | &lt;div class="ega-container--fluid"&gt;
+      |   ...
+      | &lt;/div&gt;
 
-    h2 Flat Button
-    a.ega-btn.ega-btn--flat Button
-    - var palettColor2 = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'grey', 'white', 'black']
-    each color in palettColor2
-      a(class='ega-btn ega-btn--flat ega-btn--'+color) Button
+  h2 Default Button
+  - var palettColor = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'white', 'black', 'transparent']
+  each color in palettColor
+    a(class='ega-btn ega-btn--'+color) #{color}
 
-include footer.pug
+  h2 Flat Button
+  each color in palettColor
+    a(class='ega-btn ega-btn--flat ega-btn--'+color) #{color}
