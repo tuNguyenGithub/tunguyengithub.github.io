@@ -1,14 +1,38 @@
 extends ./layout/theme.pug 
 block content
-  h2 Basic Pages
-  pre
-    code.html
-      | &lt;div class="ega-container"&gt;
-      |   ...
-      | &lt;/div&gt;
-      | &lt;div class="ega-container--fluid"&gt;
-      |   ...
-      | &lt;/div&gt;
+  div.ega-container
+    h2 Basic Pages
+    pre
+      code.html
+        | &lt;div class="ega-container"&gt;
+        |   ...
+        | &lt;/div&gt;
+        | &lt;div class="ega-container--fluid"&gt;
+        |   ...
+        | &lt;/div&gt;
+    h2 Dimension
+    pre
+      code.css
+        | @media (min-width: 576px) {
+        |   .ega-container {
+        |     max-width: 540px; 
+        |   } 
+        | }
+        | @media (min-width: 768px) {
+        |   .ega-container {
+        |     max-width: 720px; 
+        |   } 
+        | }
+        | @media (min-width: 992px) {
+        |   .ega-container {
+        |     max-width: 960px;
+        |   }
+        | }
+        | @media (min-width: 1200px) {
+        |   .ega-container {
+        |     max-width: 1140px;
+        |   }
+        | }
 
   div(style='padding-top: 30px; padding-bottom: 30px;')
   div(style='background-color: #a6be3d; padding-top: 30px; padding-bottom: 30px').ega-container.ega-text--center
