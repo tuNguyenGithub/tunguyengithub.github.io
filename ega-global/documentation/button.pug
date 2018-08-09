@@ -1,21 +1,22 @@
 extends ./layout/theme.pug
 
 block content
-  h2 Basic Pages
-  pre
-    code.html
-      | &lt;div class="ega-container"&gt;
-      |   ...
-      | &lt;/div&gt;
-      | &lt;div class="ega-container--fluid"&gt;
-      |   ...
-      | &lt;/div&gt;
+  div.ega-container
+    h2 Basic Pages
+    pre
+      code.html
+        | &lt;div class="ega-container"&gt;
+        |   ...
+        | &lt;/div&gt;
+        | &lt;div class="ega-container--fluid"&gt;
+        |   ...
+        | &lt;/div&gt;
 
-  h2 Default Button
-  - var palettColor = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'white', 'black', 'transparent']
-  each color in palettColor
-    a(class='ega-btn ega-btn--'+color) #{color}
+    h2 Default Button
+    - var palettColor = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'white', 'black', 'transparent']
+    each color in palettColor
+      a(class='ega-btn ega-btn--'+color) #{color}
 
-  h2 Flat Button
-  each color in palettColor
-    a(class='ega-btn ega-btn--flat ega-btn--'+color) #{color}
+    h2 Flat Button
+    each color in palettColor
+      a(class='ega-btn ega-btn--flat ega-btn--'+color) #{color}
