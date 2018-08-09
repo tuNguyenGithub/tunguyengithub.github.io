@@ -896,6 +896,17 @@ h6, .ega-h6 {
     display: block;
     width: 100%; }
 
+.ega-btn--sm {
+  height: 1.9125rem;
+  line-height: 1.9125rem;
+  font-size: 0.813rem;
+  padding: 0 1rem; }
+.ega-btn--lg {
+  height: 3.375rem;
+  line-height: 3.375rem;
+  font-size: 1.625rem;
+  padding: 0 1rem; }
+
 .ega-btn--primary {
   color: #ffffff;
   background-color: #007bff; }
