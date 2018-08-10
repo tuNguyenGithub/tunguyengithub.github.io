@@ -2,3 +2,4 @@ node_modules
 *.scss
 ega-global/dist/css/*.css.map
 ega-global/src
+story-book/src
