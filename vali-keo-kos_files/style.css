@@ -1696,6 +1696,7 @@ left: 20px;
     margin-top: -45px;
     content: -webkit-gradient(linear,0% 100%,0% 0%,from(#fff),color-stop(.2,#fff),to(rgba(255,255,255,0)));
     display: block;
+    border: none;
 }
 
 .intro .intro__toggle .intro__status {
