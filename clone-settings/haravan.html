@@ -58,13 +58,23 @@
             })
 
             // update title
-            var $title = $('#structure h3');
+            /*var $title = $('#structure h3');
             if ($title.length > 0) {
                 var title = $title.text();
                 var newTitle = title.replace(/[0-9]$/, function(match) {
                     return parseInt(match) + 1;
                 })
                 $title.text(newTitle);
+            }*/
+            
+            // update legend
+            var $legend = $('#structure legend');
+            if ($legend.length > 0) {
+                var legend = $legend.text();
+                var newLegend = $legend.replace(/[0-9]$/, function(match) {
+                    return parseInt(match) + 1;
+                })
+                $title.text(newLegend);
             }
 
             // append to output
