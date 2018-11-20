@@ -28,7 +28,7 @@
     </div>
     <script>
     var patt = /[0-99]$|[0-9].png$|[0-9].jpg$/; // check chữ số ở cuối
-    var patt1 = /_[0-99]_/; // check chữ số ở giữa 2 dấu "_". VD: _1_, _2_,....
+    var patt1 = /__[0-99]__/; // check chữ số ở giữa 2 dấu "_". VD: _1_, _2_,....
 
     $('#click').click(function() {
         debugger;
@@ -50,9 +50,9 @@
                         var endString = parseInt(match) + 1;
                     }*/
                     
-                    var endString = parseInt(match.split('_')[1]) + 1;
+                    var endString = parseInt(match.split('__')[1]) + 1;
                     
-                    return endString;
+                    return "__" + endString + "__";
                 });
                 $(this).attr('name', newName);
             })
