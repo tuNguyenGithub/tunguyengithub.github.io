@@ -41,13 +41,17 @@
             $('#structure [name]').each(function() {
                 var name = $(this).attr('name');
                 newName = name.replace(patt1, function(match) {
+                    /*
                     if (match.indexOf('.') > 0) {
                         var number = match.split(".")[0];
                         var imgType = match.split(".")[1];
                         var endString = (parseInt(number) + 1) + "." + imgType;
                     } else {
                         var endString = parseInt(match) + 1;
-                    }
+                    }*/
+                    
+                    var endString = parseInt(match.split('_')[1]) + 1;
+                    
                     return endString;
                 });
                 $(this).attr('name', newName);
