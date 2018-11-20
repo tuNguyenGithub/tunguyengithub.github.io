@@ -27,7 +27,8 @@
         <input type="button" id="click" class="btn btn-primary" value="Click">
     </div>
     <script>
-    var patt = /[0-99]$|[0-9].png$|[0-9].jpg$/;
+    var patt = /[0-99]$|[0-9].png$|[0-9].jpg$/; // check chữ số ở cuối
+    var patt1 = /_[0-99]_|[0-9].png$|[0-9].jpg/; // check chữ số ở giữa 2 dấu "_". VD: _1_, _2_,....
 
     $('#click').click(function() {
         debugger;
@@ -39,7 +40,7 @@
             // update new number
             $('#structure [name]').each(function() {
                 var name = $(this).attr('name');
-                newName = name.replace(patt, function(match) {
+                newName = name.replace(patt1, function(match) {
                     if (match.indexOf('.') > 0) {
                         var number = match.split(".")[0];
                         var imgType = match.split(".")[1];
