@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["bUIfG"]); }
-
-__d("XSkywalkerOracleAsyncController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/rti_skywalker_oracle/ajax/",{action:{type:"String"},payload_v2:{type:"StringToStringMap"},do_not_bump_ods:{type:"Bool",defaultValue:!1},topic:{type:"String"},topic_suffix:{type:"String"},elapsed_time_ms:{type:"Int"},num_failed:{type:"Int"},topic_set:{type:"StringSet"},e2e_test_name:{type:"String"},e2e_test_result:{type:"String"}})}),null);
